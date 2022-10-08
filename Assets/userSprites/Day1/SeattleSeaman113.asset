@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d8e735e1ea9de49b288100f8fdb0b0, type: 3}
+  m_Name: SeattleSeaman113
+  m_EditorClassIdentifier: 
+  profile: {fileID: 2800000, guid: a0ff2c2d6dd8f8846bd6e31100340347, type: 3}
+  userName: SeattleSeaMan113
+  score: 50
+  Description: 'I''m a talented sailor in need of adventure! I enjoy riding the seawaves
+    and watching the sunrise.
+
+'
+  Chat: "Ahoy there comrade! I think i would fit perfectly in your little comunity
+    because I really like seeing others opinions on my sailing adventures. \r\n"
+  hobbies:
+  - Sailing
+  - Fishing
+  - Watching the sunrise on the boat
