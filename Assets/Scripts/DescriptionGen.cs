@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 
@@ -30,11 +31,19 @@ public class DescriptionGen : MonoBehaviour
     public Image bg;
     public Transform descPanel;
     public Transform chatPanel;
+    public int day;
+    public TextMeshProUGUI gameOverText;
+    public GameObject loseScreen;
+    public TextMeshProUGUI loseText;
 
 
     private void Start()
     {
+        chatPanel.localPosition = new Vector2(-660, 160);
+        descPanel.localPosition = new Vector2(680, 101);
         notificationBox.transform.localScale = Vector2.zero;
+        gameOverScreen.transform.localScale = Vector2.zero;
+        loseScreen.transform.localScale = Vector2.zero;
         StartNoti();
         //mainSprite = sprites[Random.Range(0, sprites.Length)];
         makeProfile();
@@ -70,7 +79,14 @@ public class DescriptionGen : MonoBehaviour
     {
         desc.text = "";
         hobbies.text = "";
-        mainClass = classes[k];
+        if(k<classes.Length)
+        {
+            mainClass = classes[k];
+        }
+        else
+        {
+            GameOver();
+        }
         pfp.texture = mainClass.profile;
         chatTxT.text = mainClass.Chat;
         userName.text = mainClass.userName;
@@ -100,7 +116,18 @@ public class DescriptionGen : MonoBehaviour
 
     public void GameOver()
     {
-        gameOverScreen.SetActive(true);
+        if (score >= 400)
+        {
+            gameOverText.text = "Congratulations on completing day " + day.ToString() + " as a happy comunity";
+            gameOverScreen.transform.LeanScale(Vector2.one, 0.8f).setEaseOutBounce();
+            gameOverScreen.SetActive(true);
+        }
+        else
+        {
+            loseText.text = "You ended day " + day.ToString() + " as a sad comunity. Please try again";
+            loseScreen.transform.LeanScale(Vector2.one, 0.8f).setEaseOutBounce();
+            loseScreen.SetActive(true);
+        }
     }
     public void closeNoti()
     {
@@ -111,9 +138,16 @@ public class DescriptionGen : MonoBehaviour
 
     public void StartNoti()
     {
-        notificationBox.SetActive(true);
-        notificationBox.transform.LeanScale(Vector2.one, 0.8f).setEaseOutBounce();
-        notifTimer = startNotifTimer;
+        if(k<=classes.Length)
+        {
+            notificationBox.SetActive(true);
+            notificationBox.transform.LeanScale(Vector2.one, 0.8f).setEaseOutBounce();
+            notifTimer = startNotifTimer;
+        }
+    }
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
    
 
