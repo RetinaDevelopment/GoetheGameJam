@@ -44,3 +44,6 @@ TagManager:
   - name: Background
     uniqueID: 2465805307
     locked: 0
+  - name: dog
+    uniqueID: 3102329841
+    locked: 0
