@@ -7,8 +7,11 @@ public class SocialClass : ScriptableObject
 {
     public Texture profile;
     public Texture ChatPFP;
+    public Sprite bg;
     public string userName;
     public int score;
+    public string karma;
+    public string cakeDay;
     [TextArea(15, 20)]
     public string Description;
     [TextArea(7, 10)]

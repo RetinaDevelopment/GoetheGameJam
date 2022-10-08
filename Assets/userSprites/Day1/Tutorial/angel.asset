@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: c07cb8aa7938c5345a1cc3f1938bd0d4, type: 3}
   ChatPFP: {fileID: 2800000, guid: aa61b73d0b9c30d46980b6db4f0debd2, type: 3}
+  bg: {fileID: 0}
   userName: ' GoodPerson_02'
   score: 100
+  karma: 138
+  cakeDay: April 29, 2018
   Description: I'm a good person who really likes people and I support all genders
     and races.
   Chat: 'Hello there! I am coming to spread positivity all around your subreddit.

@@ -25,6 +25,9 @@ public class DescriptionGen : MonoBehaviour
     private int k = 0;
     public TextMeshProUGUI userName;
     public RawImage ChatPFP;
+    public TextMeshProUGUI karma;
+    public TextMeshProUGUI cakeDay;
+    public Image bg;
 
 
     private void Start()
@@ -55,7 +58,7 @@ public class DescriptionGen : MonoBehaviour
     {
         for (int i = 0; i < mainClass.hobbies.Length; i++)
         {
-            hobbies.text += mainClass.hobbies[i] + ", ";
+            hobbies.text += "-" + mainClass.hobbies[i] + "\n";
         }
     }
 
@@ -69,6 +72,8 @@ public class DescriptionGen : MonoBehaviour
         userName.text = mainClass.userName;
         makeDesc();
         makeHobbies();
+        karma.text = mainClass.karma;
+        cakeDay.text = mainClass.cakeDay;
         ChatPFP.texture = mainClass.ChatPFP;
         k++;
     }
@@ -76,6 +81,10 @@ public class DescriptionGen : MonoBehaviour
     public void accept()
     {
         score += mainClass.score;
+        if(mainClass.bg != null)
+        {
+            bg.sprite = mainClass.bg;
+        }
         makeProfile();
     }
 
