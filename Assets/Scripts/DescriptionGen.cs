@@ -8,6 +8,10 @@ using UnityEngine.UI;
 
 public class DescriptionGen : MonoBehaviour
 {
+
+    [SerializeField] float notfStartTime = 0;
+    [SerializeField] float notfStopTime = 0;
+    public GameObject notificationBox;
     public int score;
     public GameObject gameOverScreen;
     public float timer;
@@ -20,9 +24,12 @@ public class DescriptionGen : MonoBehaviour
     private SocialClass mainClass;
     public SocialClass[] classes;
     public string[] sentence;
+    
     private void Start()
     {
+
         //mainSprite = sprites[Random.Range(0, sprites.Length)];
+        NotificationOnStartSequience();
         makeProfile();
         timeSlider.maxValue = timer;
     }
@@ -81,4 +88,47 @@ public class DescriptionGen : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
     }
- }
+    
+   public void StopNotificationOnStart()
+    {
+        notificationBox.SetActive(false);
+        
+    }
+    public void StartNotificationOnStart()
+    {
+        notificationBox.SetActive(true);
+
+    }
+
+    public void StopNotificationSequienceOnStart()
+    {
+        notificationBox.SetActive(false);
+
+    }
+
+    public void NotificationOnStartSequience()
+    {
+        StopNotificationOnStart();
+        Invoke("StopNotificationOnStart", notfStopTime );
+        StartNotificationOnStart();
+        Invoke("StartNotificationOnStart", notfStartTime);
+        StopNotificationOnStart();
+        
+
+    }
+   
+
+
+
+
+
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
