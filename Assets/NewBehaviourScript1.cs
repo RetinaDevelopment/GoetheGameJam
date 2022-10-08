@@ -9,13 +9,5 @@ public class NewBehaviourScript1: MonoBehaviour
     {
         SceneManager.LoadScene("Scene1");
     }
-    public void Scene2()
-    {
-        SceneManager.LoadScene("Scene2");
-    }
-    public void Scene3()
-    {
-        SceneManager.LoadScene("Scene3");
-    }
 }
 
