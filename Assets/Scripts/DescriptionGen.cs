@@ -24,6 +24,8 @@ public class DescriptionGen : MonoBehaviour
     public float notifTimer;
     public float startNotifTimer;
     public TextMeshProUGUI chatTxT;
+    private int k = 0;
+    public TextMeshProUGUI userName;
 
 
     private void Start()
@@ -65,7 +67,7 @@ public class DescriptionGen : MonoBehaviour
     {
         for (int i = 0; i < mainClass.hobbies.Length; i++)
         {
-            hobbies.text += mainClass.hobbies[i] += ", ";
+            hobbies.text += mainClass.hobbies[i] + ", ";
         }
     }
 
@@ -73,11 +75,13 @@ public class DescriptionGen : MonoBehaviour
     {
         desc.text = "";
         hobbies.text = "";
-        pfp.texture = sprites[Random.Range(0, sprites.Length)];
-        mainClass = classes[Random.Range(0, classes.Length)];
+        mainClass = classes[k];
+        pfp.texture = mainClass.profile;
         chatTxT.text = mainClass.Chat;
+        userName.text = mainClass.userName;
         makeDesc();
         makeHobbies();
+        k++;
     }
 
     public void accept()

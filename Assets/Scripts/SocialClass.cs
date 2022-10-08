@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New User", menuName = "User")]
 public class SocialClass : ScriptableObject
 {
+    public Texture profile;
     public string userName;
     public int score;
     [TextArea(15, 20)]

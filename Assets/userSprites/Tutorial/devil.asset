@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67d8e735e1ea9de49b288100f8fdb0b0, type: 3}
-  m_Name: liar
+  m_Name: devil
   m_EditorClassIdentifier: 
-  userName: 
-  score: -50
-  Description: im weird idfk
-  Chat: 
+  profile: {fileID: 2800000, guid: 11837f8b88cb8c045b470484123d7019, type: 3}
+  userName: BadPerson_666
+  score: -100
+  Description: I am a bad person who doesnt care much about the others around me.
+  Chat: 'I am here to violate your rules and argue with your comunity.
+
+'
   hobbies:
-  - joking
-  - making fun of people
-  - criticising others work
-  - going to the gym
+  - 'Playing video games '
+  - 'Making fun of people '
+  - 'Disliking every opinion '

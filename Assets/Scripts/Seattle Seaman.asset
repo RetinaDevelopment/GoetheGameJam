@@ -19,7 +19,7 @@ MonoBehaviour:
   Chat: 'Ahoy there comrade! I think i would fit perfectly in your little comunity
     because I really like seeing others opinions on my sailing adventures. '
   hobbies:
-  - 'helping people, , '
-  - 'making compliments, , '
-  - 'cooking, , '
-  - 'fishing, , '
+  - helping people
+  - making compliments
+  - cooking
+  - fishing
