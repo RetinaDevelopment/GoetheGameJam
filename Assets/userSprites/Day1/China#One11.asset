@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: China#One11
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: cbf4f6f4a17b66b439fe71a6d6776d00, type: 3}
+  ChatPFP: {fileID: 2800000, guid: 2ec9a3599e5fc384e80ae6348946853b, type: 3}
   userName: 'Japan#One11 '
   score: 100
   Description: I am from Japan, i like cooking and reading books while drinking cofee.
   Chat: 'Hello I saw your subreddit and I want to join. Your comunity seems nice
-    and i want a place to discuss books.
+    and i want a place to discuss about books.
 
 '
   hobbies:

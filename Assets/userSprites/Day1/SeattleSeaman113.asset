@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SeattleSeaman113
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: a0ff2c2d6dd8f8846bd6e31100340347, type: 3}
+  ChatPFP: {fileID: 2800000, guid: 9e7e7abd9e86a3e4cac89feacf94028c, type: 3}
   userName: SeattleSeaMan113
   score: 50
   Description: 'I''m a talented sailor in need of adventure! I enjoy riding the seawaves

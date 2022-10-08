@@ -12,8 +12,6 @@ public class DescriptionGen : MonoBehaviour
     public GameObject notificationBox;
     public int score;
     public GameObject gameOverScreen;
-    public float timer;
-    public Slider timeSlider;
     public TextMeshProUGUI ScoreUI;
     public Texture[] sprites;
     public RawImage pfp;
@@ -26,6 +24,7 @@ public class DescriptionGen : MonoBehaviour
     public TextMeshProUGUI chatTxT;
     private int k = 0;
     public TextMeshProUGUI userName;
+    public RawImage ChatPFP;
 
 
     private void Start()
@@ -33,20 +32,9 @@ public class DescriptionGen : MonoBehaviour
         StartNoti();
         //mainSprite = sprites[Random.Range(0, sprites.Length)];
         makeProfile();
-        timeSlider.maxValue = timer;
     }
     private void Update()
     {
-        if(timer > 0)
-        {
-            timer -= Time.deltaTime;
-        }
-        else
-        {
-            GameOver();
-            timer = 0;
-        }
-        timeSlider.value = timer;
         ScoreUI.text = score.ToString();
         if(notifTimer > 0)
         {
@@ -81,6 +69,7 @@ public class DescriptionGen : MonoBehaviour
         userName.text = mainClass.userName;
         makeDesc();
         makeHobbies();
+        ChatPFP.texture = mainClass.ChatPFP;
         k++;
     }
 

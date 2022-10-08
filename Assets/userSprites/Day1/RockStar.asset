@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: RockStar
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: e8cef82450bc41a4db6101b9db254a86, type: 3}
+  ChatPFP: {fileID: 2800000, guid: c03892f7dde94644c9173926502936ce, type: 3}
   userName: RockStarMaster_42
   score: -50
-  Description: I like hard rock concerts and violent rock songs. My favorite rocck
+  Description: I like hard rock concerts and violent rock songs. My favorite rock
     type is heavy metal. I dont belive in god.
   Chat: 'One of my friends that in your comunity are a lot of lgbt members. I''d
     like to make fun of them.
@@ -24,4 +25,4 @@ MonoBehaviour:
   hobbies:
   - 'Listening to rock '
   - 'Vandalizing properties '
-  - 'Hating on other genders '
+  - Hating on LGBT

@@ -6,6 +6,7 @@ using UnityEngine;
 public class SocialClass : ScriptableObject
 {
     public Texture profile;
+    public Texture ChatPFP;
     public string userName;
     public int score;
     [TextArea(15, 20)]

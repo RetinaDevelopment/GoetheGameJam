@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: devil
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: 11837f8b88cb8c045b470484123d7019, type: 3}
+  ChatPFP: {fileID: 2800000, guid: c4c5f24734d57184ea17b31dcbed69f1, type: 3}
   userName: BadPerson_666
   score: -100
   Description: I am a bad person who doesnt care much about the others around me.
