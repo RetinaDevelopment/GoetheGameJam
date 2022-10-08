@@ -9,5 +9,7 @@ public class SocialClass : ScriptableObject
     public int score;
     [TextArea(15, 20)]
     public string Description;
+    [TextArea(7, 10)]
+    public string Chat;
     public string[] hobbies;
 }

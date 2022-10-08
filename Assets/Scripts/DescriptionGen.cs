@@ -9,8 +9,6 @@ using UnityEngine.UI;
 public class DescriptionGen : MonoBehaviour
 {
 
-    [SerializeField] float notfStartTime = 0;
-    [SerializeField] float notfStopTime = 0;
     public GameObject notificationBox;
     public int score;
     public GameObject gameOverScreen;
@@ -23,13 +21,15 @@ public class DescriptionGen : MonoBehaviour
     public TextMeshProUGUI hobbies;
     private SocialClass mainClass;
     public SocialClass[] classes;
-    public string[] sentence;
-    
+    public float notifTimer;
+    public float startNotifTimer;
+    public TextMeshProUGUI chatTxT;
+
+
     private void Start()
     {
-
+        StartNoti();
         //mainSprite = sprites[Random.Range(0, sprites.Length)];
-        NotificationOnStartSequience();
         makeProfile();
         timeSlider.maxValue = timer;
     }
@@ -46,6 +46,14 @@ public class DescriptionGen : MonoBehaviour
         }
         timeSlider.value = timer;
         ScoreUI.text = score.ToString();
+        if(notifTimer > 0)
+        {
+            notifTimer -= Time.deltaTime;
+        }
+        else
+        {
+            notificationBox.SetActive(false);
+        }
     }
 
     public void makeDesc()
@@ -67,7 +75,7 @@ public class DescriptionGen : MonoBehaviour
         hobbies.text = "";
         pfp.texture = sprites[Random.Range(0, sprites.Length)];
         mainClass = classes[Random.Range(0, classes.Length)];
-
+        chatTxT.text = mainClass.Chat;
         makeDesc();
         makeHobbies();
     }
@@ -89,32 +97,10 @@ public class DescriptionGen : MonoBehaviour
         gameOverScreen.SetActive(true);
     }
     
-   public void StopNotificationOnStart()
-    {
-        notificationBox.SetActive(false);
-        
-    }
-    public void StartNotificationOnStart()
+    public void StartNoti()
     {
         notificationBox.SetActive(true);
-
-    }
-
-    public void StopNotificationSequienceOnStart()
-    {
-        notificationBox.SetActive(false);
-
-    }
-
-    public void NotificationOnStartSequience()
-    {
-        StopNotificationOnStart();
-        Invoke("StopNotificationOnStart", notfStopTime );
-        StartNotificationOnStart();
-        Invoke("StartNotificationOnStart", notfStartTime);
-        StopNotificationOnStart();
-        
-
+        notifTimer = startNotifTimer;
     }
    
 

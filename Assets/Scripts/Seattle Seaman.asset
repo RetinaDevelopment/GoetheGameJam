@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d8e735e1ea9de49b288100f8fdb0b0, type: 3}
   m_Name: Seattle Seaman
   m_EditorClassIdentifier: 
-  userName: Seattle Seaman
+  userName: Seattle_SeaMan113
   score: 100
-  Description: 
+  Description: I'm a talented sailor in need of adventure! I enjoy riding the seawaves
+    and watching the sunrise.
+  Chat: 'Ahoy there comrade! I think i would fit perfectly in your little comunity
+    because I really like seeing others opinions on my sailing adventures. '
   hobbies:
-  - helping people
-  - making compliments
-  - cooking
-  - fishing
+  - 'helping people, , '
+  - 'making compliments, , '
+  - 'cooking, , '
+  - 'fishing, , '
