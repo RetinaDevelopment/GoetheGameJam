@@ -28,10 +28,13 @@ public class DescriptionGen : MonoBehaviour
     public TextMeshProUGUI karma;
     public TextMeshProUGUI cakeDay;
     public Image bg;
+    public Transform descPanel;
+    public Transform chatPanel;
 
 
     private void Start()
     {
+        notificationBox.transform.localScale = Vector2.zero;
         StartNoti();
         //mainSprite = sprites[Random.Range(0, sprites.Length)];
         makeProfile();
@@ -43,10 +46,11 @@ public class DescriptionGen : MonoBehaviour
         {
             notifTimer -= Time.deltaTime;
         }
-        else
+        /*else
         {
-            notificationBox.SetActive(false);
-        }
+            closeNoti();
+//            notificationBox.SetActive(false);
+        }*/
     }
 
     public void makeDesc()
@@ -98,10 +102,17 @@ public class DescriptionGen : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
     }
-    
+    public void closeNoti()
+    {
+        notificationBox.transform.LeanScale(Vector2.zero, 0.2f).setEaseInBack();
+        descPanel.LeanMoveLocal(new Vector2(167, 101), 0.8f).setEaseOutBounce();
+        chatPanel.LeanMoveLocal(new Vector2(-226, 160), 0.8f).setEaseOutBounce();
+    }
+
     public void StartNoti()
     {
         notificationBox.SetActive(true);
+        notificationBox.transform.LeanScale(Vector2.one, 0.8f).setEaseOutBounce();
         notifTimer = startNotifTimer;
     }
    
