@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Class", menuName = "Class")]
+[CreateAssetMenu(fileName = "New User", menuName = "User")]
 public class SocialClass : ScriptableObject
 {
-    public int id;
-    public string CName;
+    public string userName;
     public int score;
-    public string[] keywords;
+    [TextArea(15, 20)]
+    public string Description;
     public string[] hobbies;
 }
