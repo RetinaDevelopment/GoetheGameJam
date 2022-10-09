@@ -20,6 +20,24 @@ public class memory : MonoBehaviour
     }
     public void SceneChange()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string scenename = currentScene.name;
+        if (SceneManager.GetSceneByName("Scene7").isLoaded)
+
+        {
+            if (mem < 0)
+            {
+                SceneManager.LoadScene("Scene.15");
+            }
+            else
+            {
+                SceneManager.LoadScene("Scene.8");
+            }
+
+
+        }
         SceneManager.LoadScene(Scene.buildIndex + 1);
+
     }
+  
 }
