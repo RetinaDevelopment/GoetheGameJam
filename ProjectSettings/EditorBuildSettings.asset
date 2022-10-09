@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Joc.unity
+    guid: fd608ac0893f72f41896fd31d4606611
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: a392c810cf88391488d9257b5908af65
   m_configObjects: {}
