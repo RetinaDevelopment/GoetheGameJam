@@ -16,7 +16,6 @@ public class ScarfController : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("pula mare");
             gameObject.SetActive(false);
             diaBox2.SetActive(true);
         }
