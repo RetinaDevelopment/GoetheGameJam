@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d8e735e1ea9de49b288100f8fdb0b0, type: 3}
+  m_Name: Bot2
+  m_EditorClassIdentifier: 
+  profile: {fileID: 2800000, guid: 4290a99564b91744282e951ea19b59e1, type: 3}
+  ChatPFP: {fileID: 0}
+  bg: {fileID: 0}
+  userName: 'SlyGamer '
+  score: -100
+  karma: 6
+  cakeDay: October 3, 2022
+  Description: 'I work at Ikea, I hate video games.
+
+'
+  Chat: 'Hi, get 25% discount on Amazon by clicking this link:
+
+    https://bit.ly/3MjOhcd
+
+
+'
+  hobbies:
+  - 'Staying home '
+  - 'Going to the gym '
+  - 'Making new friends '

@@ -841,7 +841,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 5.2, y: 89.79999}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 45, y: 45}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &333403559
 MonoBehaviour:
@@ -1471,6 +1471,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6c4b7df46418c304da915622cfc4d671, type: 2}
   - {fileID: 11400000, guid: 59e7d218f985b5547889a494f59bf69f, type: 2}
   - {fileID: 11400000, guid: b07553efdfba25947987a4b44f4fd961, type: 2}
+  - {fileID: 11400000, guid: acd4f4d4d47fe6e4b89e79866776e9f1, type: 2}
+  - {fileID: 11400000, guid: e3e06dc7ecdbe1549b0eb4b129ae0a5c, type: 2}
   notifTimer: 0
   startNotifTimer: 3
   chatTxT: {fileID: 953902374}
@@ -1486,6 +1488,7 @@ MonoBehaviour:
   loseScreen: {fileID: 1630690388}
   loseText: {fileID: 1940855424}
   loadProfileTime: 0.5
+  neededScore: 450
 --- !u!4 &724116781
 Transform:
   m_ObjectHideFlags: 0

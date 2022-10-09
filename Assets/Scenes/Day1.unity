@@ -841,7 +841,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 5.2, y: 89.79999}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 45, y: 45}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &333403559
 MonoBehaviour:
@@ -1488,6 +1488,7 @@ MonoBehaviour:
   loseScreen: {fileID: 1630690388}
   loseText: {fileID: 1940855424}
   loadProfileTime: 0.5
+  neededScore: 400
 --- !u!4 &724116781
 Transform:
   m_ObjectHideFlags: 0
@@ -2512,7 +2513,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1060245269}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 724116780}
+        m_TargetAssemblyTypeName: DescriptionGen, Assembly-CSharp
+        m_MethodName: nextDay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1060245269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3117,7 +3130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1459164284
 RectTransform:
   m_ObjectHideFlags: 0

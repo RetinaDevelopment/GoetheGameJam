@@ -36,6 +36,8 @@ public class DescriptionGen : MonoBehaviour
     public GameObject loseScreen;
     public TextMeshProUGUI loseText;
     public float loadProfileTime = 0f;
+    public int neededScore;
+    public TextMeshProUGUI postsText;
 
     private void Start()
     {
@@ -65,6 +67,10 @@ public class DescriptionGen : MonoBehaviour
     public void makeDesc()
     {
         desc.text = mainClass.Description;
+        if(mainClass.Post != null)
+        {
+            postsText.text = mainClass.Post;
+        }
     }
 
     public void makeHobbies()
@@ -116,7 +122,7 @@ public class DescriptionGen : MonoBehaviour
 
     public void GameOver()
     {
-        if (score >= 400)
+        if (score >= neededScore)
         {
             gameOverText.text = "Congratulations on completing day " + day.ToString() + " as a happy comunity";
             gameOverScreen.transform.LeanScale(Vector2.one, 0.8f).setEaseOutBounce();
@@ -148,6 +154,11 @@ public class DescriptionGen : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void nextDay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
    
 

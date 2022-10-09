@@ -16,5 +16,7 @@ public class SocialClass : ScriptableObject
     public string Description;
     [TextArea(7, 10)]
     public string Chat;
+    [TextArea(4, 7)]
+    public string Post;
     public string[] hobbies;
 }
