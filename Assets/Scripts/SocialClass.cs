@@ -11,6 +11,7 @@ public class SocialClass : ScriptableObject
     public string userName;
     public int score;
     public string karma;
+    public string upvotes;
     public string cakeDay;
     [TextArea(15, 20)]
     public string Description;

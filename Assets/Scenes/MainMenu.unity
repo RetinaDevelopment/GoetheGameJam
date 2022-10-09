@@ -1847,7 +1847,9 @@ MonoBehaviour:
 
     Vlad
 
-    Kovacson'
+    Kovacson
+
+    Stefan'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52a94772b7f1165469210f27464c5ed1, type: 2}
   m_sharedMaterial: {fileID: -23076614642154174, guid: 52a94772b7f1165469210f27464c5ed1, type: 2}
@@ -1880,7 +1882,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

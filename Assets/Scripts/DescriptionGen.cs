@@ -42,6 +42,8 @@ public class DescriptionGen : MonoBehaviour
     public Transform tutorialBoxNoti;
     public Transform tutorialBoxSwitch;
     public Transform tutorialAcceptBox;
+    public TextMeshProUGUI upvotesText;
+    public TextMeshProUGUI postName;
 
     private void Start()
     {
@@ -117,6 +119,11 @@ public class DescriptionGen : MonoBehaviour
         cakeDay.text = mainClass.cakeDay;
         //fakeConsole.text += "making cakeDay " + mainClass.cakeDay;
         ChatPFP.texture = mainClass.ChatPFP;
+        if(mainClass.Post != null)
+        {
+            upvotesText.text = mainClass.upvotes;
+            postName.text = mainClass.userName;
+        }
         k++;
     }
 

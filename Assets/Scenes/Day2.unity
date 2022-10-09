@@ -1115,7 +1115,7 @@ MonoBehaviour:
   sounds:
   - name: click
     clip: {fileID: 8300000, guid: 539ffaa93a75850438d844ef82c9f485, type: 3}
-    volume: 1
+    volume: 0.75
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -1826,6 +1826,8 @@ MonoBehaviour:
   tutorialBoxNoti: {fileID: 0}
   tutorialBoxSwitch: {fileID: 0}
   tutorialAcceptBox: {fileID: 0}
+  upvotesText: {fileID: 0}
+  postName: {fileID: 0}
 --- !u!4 &724116781
 Transform:
   m_ObjectHideFlags: 0
