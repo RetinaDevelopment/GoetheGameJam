@@ -68,9 +68,12 @@ public class DescriptionGen : MonoBehaviour
     public void makeDesc()
     {
         desc.text = mainClass.Description;
-        if(mainClass.Post != null)
+        if(postsText != null)
         {
-            //postsText.text = mainClass.Post;
+            if (mainClass.Post != null)
+            {
+                postsText.text = mainClass.Post;
+            }
         }
     }
 
@@ -84,7 +87,7 @@ public class DescriptionGen : MonoBehaviour
 
     public void makeProfile()
     {
-        fakeConsole.text += "making profile ";
+        //fakeConsole.text += "making profile ";
         desc.text = "";
         hobbies.text = "";
         if(k<classes.Length)
@@ -99,13 +102,13 @@ public class DescriptionGen : MonoBehaviour
         chatTxT.text = mainClass.Chat;
         userName.text = mainClass.userName;
         makeDesc();
-        fakeConsole.text += "making description ";
+        //fakeConsole.text += "making description ";
         makeHobbies();
-        fakeConsole.text += "making hobbies ";
+        //fakeConsole.text += "making hobbies ";
         karma.text = mainClass.karma;
-        fakeConsole.text += "making karma " + mainClass.karma;
+        //fakeConsole.text += "making karma " + mainClass.karma;
         cakeDay.text = mainClass.cakeDay;
-        fakeConsole.text += "making cakeDay " + mainClass.cakeDay;
+        //fakeConsole.text += "making cakeDay " + mainClass.cakeDay;
         ChatPFP.texture = mainClass.ChatPFP;
         k++;
     }
@@ -118,12 +121,14 @@ public class DescriptionGen : MonoBehaviour
             bg.sprite = mainClass.bg;
         }
         Invoke("makeProfile", loadProfileTime);
+        FindObjectOfType<AudioManager>().Play("click");
     }
 
     public void reject()
     {
         score -= mainClass.score;
         makeProfile();
+        FindObjectOfType<AudioManager>().Play("click");
     }
 
     public void GameOver()
@@ -167,9 +172,16 @@ public class DescriptionGen : MonoBehaviour
 
     }
    
+    public void Click()
+    {
+        FindObjectOfType<AudioManager>().Play("click");
+    }
 
-
-
+    public void postClick()
+    {
+        desc.gameObject.SetActive(false);
+        hobbies.gameObject.SetActive(false);
+    }
 
 
 } 
