@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 374993624}
   - component: {fileID: 374993628}
   - component: {fileID: 374993629}
+  - component: {fileID: 374993630}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -525,6 +526,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3bdc267a92fec4b80ec38f20bdad61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &374993630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374993623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb2962b867531774b8a994467162141c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CodeInput: {fileID: 0}
+  SceneName1: 
+  SceneName2: 
 --- !u!1 &396360776
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +643,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 399050983}
+      - m_Target: {fileID: 374993630}
         m_TargetAssemblyTypeName: code, Assembly-CSharp
         m_MethodName: loadscene
         m_Mode: 1
@@ -813,8 +829,6 @@ MonoBehaviour:
   CodeInput: {fileID: 396360778}
   SceneName1: Scene1
   SceneName2: Scene2
-  condition1: 1
-  condition2: 2
 --- !u!1 &518556901
 GameObject:
   m_ObjectHideFlags: 0
