@@ -219,6 +219,10 @@ public class DescriptionGen : MonoBehaviour
         if (tutorialAcceptBox != null)
             tutorialAcceptBox.LeanMoveLocal(new Vector2(149, -188), 0.8f).setEaseOutBack();
     }
+    public void quitApp()
+    {
+        SceneManager.LoadScene(0);
+    }
 } 
  
  

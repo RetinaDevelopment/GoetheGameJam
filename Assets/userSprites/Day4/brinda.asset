@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d8e735e1ea9de49b288100f8fdb0b0, type: 3}
+  m_Name: brinda
+  m_EditorClassIdentifier: 
+  profile: {fileID: 2800000, guid: c89fbbe56e742b541b85c663ed9c4a64, type: 3}
+  ChatPFP: {fileID: 2800000, guid: 8796fd96be491bf4ea5feff92637a235, type: 3}
+  bg: {fileID: 0}
+  userName: Brinda_245
+  score: 100
+  karma: 2.3K
+  upvotes: 249
+  cakeDay: February 12, 2018
+  Description: 'I''m a colorblind girl looking for nice comunities. I like activities
+    that arent based on color.
+
+'
+  Chat: 'Hi there! I am looking to join your comunity. It all seems so wholesome.
+
+'
+  Post: Colorblindness sucks :(
+  hobbies:
+  - Dancing
+  - Iceskating

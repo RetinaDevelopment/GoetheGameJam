@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bot3
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: f6f0bcf8acc81e34ea1cb0312fc3d9cd, type: 3}
-  ChatPFP: {fileID: 0}
+  ChatPFP: {fileID: 2800000, guid: 25860ad058d9f2447a82c0430e564943, type: 3}
   bg: {fileID: 0}
   userName: SlurpAI556
   score: -100

@@ -18,12 +18,15 @@ MonoBehaviour:
   userName: Bot_0177
   score: -100
   karma: 0
+  upvotes: 
   cakeDay: October 9, 2022
-  Description: 'I''m a very good preson. I''m so good around other people.
+  Description: 'I''m a very good person. I''m so good around other people.
 
 '
-  Chat: 'Hey! I would like to join your comunity. Aloso check would you like to check
-    out this amazing product?
+  Chat: 'Hey! I would like to join your comunity. Also, would you like to check out
+    this amazing product?
+
+    https://bit.ly/3MjOhcd
 
 '
   Post: 

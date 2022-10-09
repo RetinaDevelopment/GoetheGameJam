@@ -25,4 +25,8 @@ public class tutorialButton : MonoBehaviour
             button.SetActive(true);
         }
     }
+    public void ClickButton()
+    {
+        FindObjectOfType<AudioManager>().Play("click");
+    }
 }
