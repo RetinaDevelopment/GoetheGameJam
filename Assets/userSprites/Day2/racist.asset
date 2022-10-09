@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d8e735e1ea9de49b288100f8fdb0b0, type: 3}
+  m_Name: racist
+  m_EditorClassIdentifier: 
+  profile: {fileID: 2800000, guid: 403ac61c864ea0f4c9d66b0f8daf1c29, type: 3}
+  ChatPFP: {fileID: 0}
+  bg: {fileID: 0}
+  userName: 'Gridlock_Dragon43 '
+  score: -100
+  karma: 39
+  cakeDay: June 19, 2020
+  Description: 'I''m a baseball player, I like training a lot.
+
+'
+  Chat: 'Hi bro! I am really interested in joining your comunity. I''ve seen some
+    whites around here and even a japanese. Thats crazy considering whites are the
+    main race.
+
+'
+  hobbies:
+  - 'playing baseball '
+  - 'jogging '
+  - 'hanging out with friends '
