@@ -1574,7 +1574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tuesday, 6th December
+  m_text: Tuesday, 6th of December
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f27fd3681fa533541a6b5f130fe27fce, type: 2}
   m_sharedMaterial: {fileID: 7357024917812007516, guid: f27fd3681fa533541a6b5f130fe27fce, type: 2}
