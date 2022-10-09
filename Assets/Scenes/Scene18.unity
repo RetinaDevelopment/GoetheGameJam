@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 1554852297}
   - component: {fileID: 1554852298}
   - component: {fileID: 1554852299}
+  - component: {fileID: 1554852300}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -562,6 +563,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce97246442a99af4899e9c0c4de399bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1554852300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554852292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3bdc267a92fec4b80ec38f20bdad61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1591730057
@@ -1204,8 +1217,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 688086939346789638, guid: fb8a289e7acd8c34b80f5fc3bf0cd8ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 688086939346789638, guid: fb8a289e7acd8c34b80f5fc3bf0cd8ba, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1554852299}
+      objectReference: {fileID: 1554852300}
+    - target: {fileID: 688086939346789638, guid: fb8a289e7acd8c34b80f5fc3bf0cd8ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 688086939346789638, guid: fb8a289e7acd8c34b80f5fc3bf0cd8ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene22, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 688086939346789638, guid: fb8a289e7acd8c34b80f5fc3bf0cd8ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 19
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb8a289e7acd8c34b80f5fc3bf0cd8ba, type: 3}

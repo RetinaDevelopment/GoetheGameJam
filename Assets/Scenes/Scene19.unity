@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: 1554852293}
   - component: {fileID: 1554852297}
   - component: {fileID: 1554852298}
+  - component: {fileID: 1554852299}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -677,6 +678,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed71dcfd5cb49b248bd618c6ca89298e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1554852299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554852292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3bdc267a92fec4b80ec38f20bdad61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1591730057
@@ -1230,7 +1243,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1865902958}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1554852299}
+        m_TargetAssemblyTypeName: Scene22, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1865902958
 MonoBehaviour:
   m_ObjectHideFlags: 0
