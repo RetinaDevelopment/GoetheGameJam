@@ -50,37 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene14.unity
     guid: f2388397587ec3a49b775620454cb5d8
-<<<<<<< Updated upstream
-=======
   - enabled: 1
-    path: Assets/Scenes/secret1.unity
-    guid: 15df9730073ed33468fc41d747cb47a3
->>>>>>> Stashed changes
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-<<<<<<< Updated upstream
-=======
-    path: Assets/Scenes/secret2.unity
-    guid: 0939ee145c85a0647a04c98dbc5c8e56
-  - enabled: 1
->>>>>>> Stashed changes
     path: Assets/Scenes/Scene15.unity
     guid: 686badb373406b04fb3fa1339ebf69cf
   - enabled: 1
