@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: 11837f8b88cb8c045b470484123d7019, type: 3}
   ChatPFP: {fileID: 2800000, guid: c4c5f24734d57184ea17b31dcbed69f1, type: 3}
+  bg: {fileID: 0}
   userName: BadPerson_666
   score: -100
+  karma: 11,724
+  cakeDay: 'September 7, 2015 '
   Description: I am a bad person who doesnt care much about the others around me.
   Chat: 'I am here to violate your rules and argue with your comunity.
 

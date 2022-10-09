@@ -1624,6 +1624,7 @@ MonoBehaviour:
   gameOverText: {fileID: 5248659}
   loseScreen: {fileID: 1630690388}
   loseText: {fileID: 1940855424}
+  loadProfileTime: 0.5
 --- !u!4 &724116781
 Transform:
   m_ObjectHideFlags: 0

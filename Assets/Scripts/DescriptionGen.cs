@@ -35,7 +35,7 @@ public class DescriptionGen : MonoBehaviour
     public TextMeshProUGUI gameOverText;
     public GameObject loseScreen;
     public TextMeshProUGUI loseText;
-
+    public float loadProfileTime = 0f;
 
     private void Start()
     {
@@ -105,7 +105,7 @@ public class DescriptionGen : MonoBehaviour
         {
             bg.sprite = mainClass.bg;
         }
-        makeProfile();
+        Invoke("makeProfile", loadProfileTime);
     }
 
     public void reject()
@@ -141,7 +141,7 @@ public class DescriptionGen : MonoBehaviour
         if(k<=classes.Length)
         {
             notificationBox.SetActive(true);
-            notificationBox.transform.LeanScale(Vector2.one, 0.8f).setEaseOutBounce();
+            notificationBox.transform.LeanScale(Vector2.one, 0.7f).setEaseOutBounce();
             notifTimer = startNotifTimer;
         }
     }
