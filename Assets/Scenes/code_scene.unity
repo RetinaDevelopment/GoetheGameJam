@@ -538,9 +538,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2962b867531774b8a994467162141c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CodeInput: {fileID: 0}
-  SceneName1: 
-  SceneName2: 
+  CodeInput: {fileID: 396360778}
+  SceneName1: secret1
+  SceneName2: secret2
 --- !u!1 &396360776
 GameObject:
   m_ObjectHideFlags: 0
