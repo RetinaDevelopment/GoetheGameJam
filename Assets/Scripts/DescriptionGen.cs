@@ -119,7 +119,7 @@ public class DescriptionGen : MonoBehaviour
         cakeDay.text = mainClass.cakeDay;
         //fakeConsole.text += "making cakeDay " + mainClass.cakeDay;
         ChatPFP.texture = mainClass.ChatPFP;
-        if(mainClass.Post != null)
+        if(mainClass.Post != "")
         {
             upvotesText.text = mainClass.upvotes;
             postName.text = mainClass.userName;
@@ -155,7 +155,7 @@ public class DescriptionGen : MonoBehaviour
         }
         else
         {
-            loseText.text = "You ended day " + day.ToString() + " as a sad comunity. Please try again";
+            loseText.text = "You ended day " + day.ToString() + " as a sad comunity because you accepted/rejected the wrong users. Please try again";
             loseScreen.transform.LeanScale(Vector2.one, 0.8f).setEaseOutBounce();
             loseScreen.SetActive(true);
         }

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d8e735e1ea9de49b288100f8fdb0b0, type: 3}
+  m_Name: gay
+  m_EditorClassIdentifier: 
+  profile: {fileID: 2800000, guid: f79f960c069e3bc499bf2d65785b6d99, type: 3}
+  ChatPFP: {fileID: 2800000, guid: ad83449d6c1395544a7297830e5bcf0d, type: 3}
+  bg: {fileID: 0}
+  userName: PrideMommy420
+  score: -100
+  karma: 24.5K
+  upvotes: 7k
+  cakeDay: June 8, 2021
+  Description: 'I like men.Being straight is not an option! My pronouns are: she/he.
+
+'
+  Chat: Dang girl! i saw your comunity is full of straight people. Unacceptable!
+    >:(
+  Post: 'Gay marriage should gain some respect! #GoGay
+
+'
+  hobbies:
+  - 'supporting pride '
+  - using twitter
+  - watching tiktok
