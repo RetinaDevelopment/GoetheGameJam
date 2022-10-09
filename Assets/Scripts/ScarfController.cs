@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class ScarfController : MonoBehaviour
 {
-    public GameObject objectToSpawn;
+    public GameObject diaBox2;
 
     // Start is called before the first frame update
     void start()
     {
-        Instantiate(objectToSpawn, transform.position, transform.rotation);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            Destroy(gameObject);
+            Debug.Log("pula mare");
+            gameObject.SetActive(false);
+            diaBox2.SetActive(true);
         }
     }
 }

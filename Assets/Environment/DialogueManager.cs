@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> sentences;
     public static DialogueManager instance;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI dialogueText;
     public Animator anim;
+    public GameObject dawg;
+    public GameObject canvas;
+    public GameObject suicidCam;
+    public GameObject mainCam;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +25,14 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("starting convo with");
+        canvas.SetActive(true);
+
+        nameText.text = dialogue.name;
 
         sentences.Clear();
+
+        dawg.GetComponent<PlayerMovement>().speed = 0f;
+        dawg.GetComponent<PlayerMovement>().jumpingPower = 0f;
 
         foreach (string sentence in dialogue.sentences)
         {
@@ -38,13 +50,20 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        Debug.Log(sentence);
+        dialogueText.text = sentence;
     }
 
 
     void EndDialogue()
     {
-        Debug.Log("End Conversation");
-        anim.SetBool("Pula", false);    
+        if(suicidCam.activeSelf)
+        {
+            suicidCam.SetActive(false);
+            mainCam.SetActive(true);
+        }
+        anim.SetBool("Pula", false);
+        dawg.GetComponent<PlayerMovement>().speed = 10f;
+        dawg.GetComponent<PlayerMovement>().jumpingPower = 15f;
+        canvas.SetActive(false);
     }
 }

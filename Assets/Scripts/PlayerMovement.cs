@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 10f;
-    private float jumpingPower = 15f;
+    public float speed = 10f;
+    public float jumpingPower = 15f;
     private bool isFacingRight = true;
     public Animator animator;
     
