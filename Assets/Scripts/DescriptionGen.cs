@@ -38,6 +38,7 @@ public class DescriptionGen : MonoBehaviour
     public float loadProfileTime = 0f;
     public int neededScore;
     public TextMeshProUGUI postsText;
+    public TextMeshProUGUI fakeConsole;
 
     private void Start()
     {
@@ -69,7 +70,7 @@ public class DescriptionGen : MonoBehaviour
         desc.text = mainClass.Description;
         if(mainClass.Post != null)
         {
-            postsText.text = mainClass.Post;
+            //postsText.text = mainClass.Post;
         }
     }
 
@@ -83,6 +84,7 @@ public class DescriptionGen : MonoBehaviour
 
     public void makeProfile()
     {
+        fakeConsole.text += "making profile ";
         desc.text = "";
         hobbies.text = "";
         if(k<classes.Length)
@@ -97,9 +99,13 @@ public class DescriptionGen : MonoBehaviour
         chatTxT.text = mainClass.Chat;
         userName.text = mainClass.userName;
         makeDesc();
+        fakeConsole.text += "making description ";
         makeHobbies();
+        fakeConsole.text += "making hobbies ";
         karma.text = mainClass.karma;
+        fakeConsole.text += "making karma " + mainClass.karma;
         cakeDay.text = mainClass.cakeDay;
+        fakeConsole.text += "making cakeDay " + mainClass.cakeDay;
         ChatPFP.texture = mainClass.ChatPFP;
         k++;
     }
