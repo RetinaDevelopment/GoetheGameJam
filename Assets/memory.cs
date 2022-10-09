@@ -20,6 +20,6 @@ public class memory : MonoBehaviour
     }
     public void SceneChange()
     {
-        SceneManager.LoadScene(Scene.buildIndex + 1) ;
+        SceneManager.LoadScene(Scene.buildIndex + 1);
     }
 }

@@ -277,8 +277,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1554852299}
-        m_TargetAssemblyTypeName: Scene17, Assembly-CSharp
-        m_MethodName: Scena17
+        m_TargetAssemblyTypeName: Scene16, Assembly-CSharp
+        m_MethodName: Scena16
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1554852292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 142a745e19d552e4faac73c21fbefe59, type: 3}
+  m_Script: {fileID: 11500000, guid: 8dc2672f6f7d92245b494bc6b7caaac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1591730057
