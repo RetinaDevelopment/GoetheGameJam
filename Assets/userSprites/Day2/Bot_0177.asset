@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bot_0177
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: 2bd4dca5bf7a8bd479ec84e2db6db102, type: 3}
-  ChatPFP: {fileID: 0}
+  ChatPFP: {fileID: 2800000, guid: bfb4896c037fffd44a590b4e777bbdfc, type: 3}
   bg: {fileID: 0}
   userName: Bot_0177
   score: -100
@@ -26,6 +26,7 @@ MonoBehaviour:
     out this amazing product?
 
 '
+  Post: 
   hobbies:
   - 'watching tv '
   - being good

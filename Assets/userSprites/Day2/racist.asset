@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: racist
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: 403ac61c864ea0f4c9d66b0f8daf1c29, type: 3}
-  ChatPFP: {fileID: 0}
+  ChatPFP: {fileID: 2800000, guid: e18bbe83abf398e479c8efcc7288521b, type: 3}
   bg: {fileID: 0}
   userName: 'Gridlock_Dragon43 '
   score: -100
@@ -27,6 +27,7 @@ MonoBehaviour:
     main race.
 
 '
+  Post: 
   hobbies:
   - 'playing baseball '
   - 'jogging '

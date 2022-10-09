@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bot2
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: 4290a99564b91744282e951ea19b59e1, type: 3}
-  ChatPFP: {fileID: 0}
+  ChatPFP: {fileID: 2800000, guid: 19730e9cce7e90c4ebab71a9ea4d0eb0, type: 3}
   bg: {fileID: 0}
   userName: 'SlyGamer '
   score: -100
@@ -28,6 +28,7 @@ MonoBehaviour:
 
 
 '
+  Post: 
   hobbies:
   - 'Staying home '
   - 'Going to the gym '

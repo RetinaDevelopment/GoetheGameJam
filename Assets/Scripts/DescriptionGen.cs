@@ -39,6 +39,9 @@ public class DescriptionGen : MonoBehaviour
     public int neededScore;
     public TextMeshProUGUI postsText;
     public TextMeshProUGUI fakeConsole;
+    public Transform tutorialBoxNoti;
+    public Transform tutorialBoxSwitch;
+    public Transform tutorialAcceptBox;
 
     private void Start()
     {
@@ -50,6 +53,10 @@ public class DescriptionGen : MonoBehaviour
         StartNoti();
         //mainSprite = sprites[Random.Range(0, sprites.Length)];
         makeProfile();
+        if(tutorialBoxNoti != null)
+        {
+            tutorialBoxNoti.LeanMoveLocal(new Vector2(244.2f, 138.1f), 0.8f).setEaseOutBack();
+        }
     }
     private void Update()
     {
@@ -183,7 +190,28 @@ public class DescriptionGen : MonoBehaviour
         hobbies.gameObject.SetActive(false);
     }
 
+    public void descClick()
+    {
+        hobbies.gameObject.SetActive(false);
+        postsText.gameObject.SetActive(false);
+    }
+    public void hobbyClick()
+    {
+        postsText.gameObject.SetActive(false);
+        desc.gameObject.SetActive(false);
+    }
+    public void tutSwitch()
+    {
+        if (tutorialBoxSwitch != null)
+            tutorialBoxSwitch.LeanMoveLocal(new Vector2(175f, 145.3f), 0.8f).setEaseOutBack();
+        Debug.Log("mergi drc odata");
+    }
 
+    public void tutAccept()
+    {
+        if (tutorialAcceptBox != null)
+            tutorialAcceptBox.LeanMoveLocal(new Vector2(149, -188), 0.8f).setEaseOutBack();
+    }
 } 
  
  

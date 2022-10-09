@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kpop
   m_EditorClassIdentifier: 
   profile: {fileID: 2800000, guid: bcc459bdb908b2c4881a32209297078c, type: 3}
-  ChatPFP: {fileID: 0}
+  ChatPFP: {fileID: 2800000, guid: 7939367c96930634cbeb3338d6f32b73, type: 3}
   bg: {fileID: 0}
   userName: IlyBTS _#1FAN
   score: 50
@@ -26,6 +26,7 @@ MonoBehaviour:
     in there.
 
 '
+  Post: 
   hobbies:
   - 'listening to music '
   - 'drawing '
