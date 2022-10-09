@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d8e735e1ea9de49b288100f8fdb0b0, type: 3}
+  m_Name: influencer
+  m_EditorClassIdentifier: 
+  profile: {fileID: 2800000, guid: dd8b0e28af16c4545926e5176b3b4f93, type: 3}
+  ChatPFP: {fileID: 2800000, guid: 765f98ca7664f5a4f8af65d4d007b764, type: 3}
+  bg: {fileID: 0}
+  userName: ProKiller_YT
+  score: -100
+  karma: 15.8K
+  upvotes: 4.3K
+  cakeDay: March 25, 2020
+  Description: "I'm a huge youtuber. Subscribe or your house will be haunted! ;)\r"
+  Chat: 'Hi! I think I''d be a perfect fit for your comunity because I am a big youtuber
+    and I can promote it.
+
+'
+  Post: 'Can''t wait to join this subreddit. I''ll get so much clout. >:)
+
+'
+  hobbies:
+  - 'filming '
+  - 'editing '
+  - 'playing games '
