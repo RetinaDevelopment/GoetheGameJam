@@ -27,12 +27,15 @@ public class memory : MonoBehaviour
         {
             if (mem < 0)
             {
-                SceneManager.LoadScene("Scene.15");
+                SceneManager.LoadScene("Scene15");
+                return; 
             }
             else
             {
-                SceneManager.LoadScene("Scene.8");
+                SceneManager.LoadScene("Scene8");
+                return; 
             }
+
 
 
         }
