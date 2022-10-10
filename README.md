@@ -1,6 +1,6 @@
 # GoetheGameJam
 This project has been realized with the participation and dedication of many people.
-  *Names cannot be listed due to personal privacy related reasons.
+*Names cannot be listed due to personal privacy related reasons.
 
 Branches:
 
